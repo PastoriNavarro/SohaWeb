@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    background-attachment: local;
+    justify-content: center;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #333;
+}
+
+.logo {
+    max-width: 8rem;
+    margin-left: 60px;
+    padding-right: 40px;
+}
+
+.barra{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+
+}
+
+.barra li a {
+    text-decoration: none;
+    color: white;
+}
+
+.barra a:hover {
+    color: #72ec0f;
+}
+
+.abrir, .cerrar {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+.abrir {
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    color: white;
+    background-color: #333;
+    font-size: xx-large;
+    width: 50px;
+    height: 50px;
+
+}
+
+.cerrar {
+    display: block;
+    font-size: medium;
+    color: white;
+    background-color: #333;
+}
+
+.abrir, .cerrar {
+    border: none;
+    cursor: pointer;
+}
+
+.nav {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav {
+    display: flex;
+    position: absolute;
+    align-items: baseline;
+    gap: 1rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    padding: 2rem;
+    box-shadow: 20px 20px 20px 20px black;
+    z-index: 2;
+    
+}
+
+.nav.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.barra {
+    flex-direction: column;
+    align-items: end;
+}
+
+.barra li a {
+    color: white;
+}
+    
+}
+
+.fondo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    background-attachment: fixed ;
+    position: relative;
+    text-align: center;
+    padding-top: 1100px;
+    padding-left: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    
+}
+
+.carta {
+    padding: 20px;
+    box-shadow: 20px 20px 20px #333;
+    width: 900px;
+    height: 1000px;
+    max-width: 800px;
+    top: 160px;
+    left: 265px;
+    color: #333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+@media screen and (max-width: 768px) {
+    .carta {
+        left: 70px;
+        display: block;
+        max-width: 500px;
+        font-size: small;
+    }
+}
+
+#col1 {
+    float: left;
+    width: 50%;
+    background-color: transparent;
+    border-color: transparent;
+    
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.menu-item {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content img {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    height: auto;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    top: 0px;
+
+}
+
+.container-footer a {
+    padding: 0px 30px 0px 0px;
+}
+
+#politicas {
+display: inline-flex;
+align-items: center;
+display: block;
+
+}
