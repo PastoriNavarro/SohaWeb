@@ -13,6 +13,30 @@ a {
     color: white;
 }
 
+.fondo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    background-attachment: fixed ;
+    position: absolute;
+    text-align: center;
+    padding-top: 2670px;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    z-index: 0;
+    
+}
+
+@media screen and (max-width: 480px){
+    .fondo{
+        height: auto;
+        position: absolute;
+        z-index: 0;
+    }
+}
+
+
 header {
     display: flex;
     align-items: center;
@@ -24,7 +48,6 @@ header {
 .logo {
     max-width: 8rem;
     margin-left: 60px;
-    padding-right: 40px;
 }
 
 .barra{
@@ -118,123 +141,37 @@ header {
         
     }
 
-.fondo {
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    background-attachment: fixed ;
-    position: relative;
+.container {
+    width: 900px;
+    margin: 20px auto;
+    padding: 10px 20px;
     text-align: center;
-    padding-top: 1100px;
-    padding-left: 0px;
-    display: block;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    font-size: larger;
+    background-color: white;
+    box-shadow: 20px 20px 20px black;
+
+}
+.section {
+    margin-bottom: 30px;
     
 }
-
-.carta {
-    padding: 20px;
-    box-shadow: 20px 20px 20px #333;
-    width: 900px;
-    height: 1000px;
-    max-width: 800px;
-    top: 160px;
-    left: 265px;
-    color: #333;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    position: absolute;
-    background-color: white;
-    align-items: center;
-    text-align: center;
-    cursor: pointer;
-    z-index: 1;
-
+.section img {
+    width: 80%;
+    height: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 20px 20px 20px black;
 }
 
 @media screen and (max-width: 480px) {
-    .carta {
-        left: 20px;
-        top: 80px;
-        display: flexbox;
-        max-width: 400px;
-        font-size: small;
+    .container{
+        width: 400px;
+        top: 20px;
+
     }
-}
-
-#col1 {
-    float: left;
-    width: 50%;
-    background-color: transparent;
-    border-color: transparent;
-    
-}
-
-h2 {
-    color: #333;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-.menu-item {
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-.modal-content img {
-    width: 500px;
-    height: 300px;
-    overflow: hidden;
-    height: auto;
-}
-
-@media  screen and (max-width: 480px) {
-    .modal-content img {
-        width: 300px;
-    }
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 footer {
@@ -243,7 +180,6 @@ footer {
     text-align: center;
     padding: 10px 0;
     position: relative;
-    top: 0px;
 
 }
 
@@ -258,3 +194,9 @@ display: block;
 
 }
 
+@media  screen and (max-width: 480px) {
+    footer{
+        top: 145px;
+    }
+    
+}

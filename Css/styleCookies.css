@@ -24,7 +24,6 @@ header {
 .logo {
     max-width: 8rem;
     margin-left: 60px;
-    padding-right: 40px;
 }
 
 .barra{
@@ -118,123 +117,28 @@ header {
         
     }
 
-.fondo {
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    background-attachment: fixed ;
+.cookies {
     position: relative;
     text-align: center;
-    padding-top: 1100px;
-    padding-left: 0px;
-    display: block;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    
-}
-
-.carta {
-    padding: 20px;
-    box-shadow: 20px 20px 20px #333;
-    width: 900px;
-    height: 1000px;
-    max-width: 800px;
-    top: 160px;
-    left: 265px;
     color: #333;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    position: absolute;
-    background-color: white;
-    align-items: center;
-    text-align: center;
-    cursor: pointer;
-    z-index: 1;
-
-}
-
-@media screen and (max-width: 480px) {
-    .carta {
-        left: 20px;
-        top: 80px;
-        display: flexbox;
-        max-width: 400px;
-        font-size: small;
-    }
-}
-
-#col1 {
-    float: left;
     width: 50%;
-    background-color: transparent;
-    border-color: transparent;
-    
+    left: 25% /*centrado*/
+
 }
 
-h2 {
+.cookies a {
     color: #333;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.cookies a:hover {
+    color: #72ec0f;
 }
 
-li {
-    margin-bottom: 10px;
-}
-
-.menu-item {
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-.modal-content img {
-    width: 500px;
-    height: 300px;
-    overflow: hidden;
-    height: auto;
-}
-
-@media  screen and (max-width: 480px) {
-    .modal-content img {
-        width: 300px;
+@media screen and (max-width: 480px){
+    .cookies{
+        width: 80%;
+        left: 60px;
     }
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 footer {
@@ -244,7 +148,6 @@ footer {
     padding: 10px 0;
     position: relative;
     top: 0px;
-
 }
 
 .container-footer a {
@@ -252,9 +155,7 @@ footer {
 }
 
 #politicas {
-display: inline-flex;
+display: inline-block;
 align-items: center;
-display: block;
-
+padding: 0px 20px;
 }
-

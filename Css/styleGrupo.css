@@ -1,16 +1,39 @@
-body {
-    margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
-    background-attachment: local;
-    justify-content: center;
-    
+body{
+margin: 0;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background-color: #f7f7f7;
+color: #333;
+background-attachment: local;
+justify-content: center;
+
 }
 
 a {
     text-decoration: none;
     color: white;
+}
+
+.fondo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    background-attachment: fixed ;
+    position: absolute;
+    text-align: center;
+    padding-top: 1000px;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    z-index: 0;
+
+}
+
+@media screen and (max-width: 480px) {
+    .fondo {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1500px;
+    }
 }
 
 header {
@@ -24,7 +47,6 @@ header {
 .logo {
     max-width: 8rem;
     margin-left: 60px;
-    padding-right: 40px;
 }
 
 .barra{
@@ -46,7 +68,6 @@ header {
 .abrir, .cerrar {
     display: none;
 }
-
 
 @media screen and (max-width: 480px) {
     .abrir {
@@ -118,123 +139,75 @@ header {
         
     }
 
-.fondo {
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    background-attachment: fixed ;
+.menu-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    display: flex;
     position: relative;
-    text-align: center;
-    padding-top: 1100px;
-    padding-left: 0px;
-    display: block;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    
-}
-
-.carta {
-    padding: 20px;
-    box-shadow: 20px 20px 20px #333;
-    width: 900px;
-    height: 1000px;
-    max-width: 800px;
-    top: 160px;
-    left: 265px;
-    color: #333;
+    background-color: #f7f7f7;
+    left: 120px;
+    top: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    position: absolute;
-    background-color: white;
-    align-items: center;
-    text-align: center;
-    cursor: pointer;
+    color: #333;
+    width: 1300px;
+    box-shadow: 20px 20px 20px black;
     z-index: 1;
 
+}
+
+.menu-item img {
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: auto;
+
+}
+
+.menu-item p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.menu-item li {
+    list-style-type: none;
 }
 
 @media screen and (max-width: 480px) {
-    .carta {
-        left: 20px;
-        top: 80px;
-        display: flexbox;
+    .menu-item {
+        display: block;
         max-width: 400px;
         font-size: small;
+        left: 40px;
+        text-align: center;
+        
     }
-}
 
-#col1 {
-    float: left;
-    width: 50%;
-    background-color: transparent;
-    border-color: transparent;
-    
-}
-
-h2 {
-    color: #333;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-.menu-item {
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-.modal-content img {
-    width: 500px;
-    height: 300px;
-    overflow: hidden;
-    height: auto;
-}
-
-@media  screen and (max-width: 480px) {
-    .modal-content img {
-        width: 300px;
+    .menu-item img {
+        max-width: 350px;
+        margin-left: 3px;
     }
+
+    .menu-item h1 {
+        left: 100px;
+    }
+
 }
 
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
+.boton-reserva {
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
     cursor: pointer;
+    top: 200px;
+    left: 800px;
+    position: absolute;
+}
+
+.boton-reserva:hover {
+    background-color: #72ec0f;
+    color: #333;
 }
 
 footer {
@@ -243,7 +216,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     position: relative;
-    top: 0px;
+    top: 30px;
 
 }
 
@@ -252,9 +225,8 @@ footer {
 }
 
 #politicas {
-display: inline-flex;
+display: inline-block;
 align-items: center;
 display: block;
 
 }
-

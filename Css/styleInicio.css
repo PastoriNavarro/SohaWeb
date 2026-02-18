@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #f7f7f7;
     color: #333;
     background-attachment: local;
@@ -61,7 +61,7 @@ header {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
 .abrir {
     display: block;
     position: absolute;
@@ -72,6 +72,7 @@ header {
     font-size: xx-large;
     width: 50px;
     height: 50px;
+    margin-top: -10px;
 
 }
 
@@ -87,23 +88,29 @@ header {
     cursor: pointer;
 }
 
+.logo {
+    position: absolute;
+    z-index: 2;
+    left: 25%;
+    margin-top: -27px;
+}
 .nav {
     opacity: 0;
     visibility: hidden;
 }
 
 .nav {
-    display: flex;
+    display: block;
     position: absolute;
-    align-items: baseline;
+    align-items: center;
     gap: 1rem;
-    top: 0;
-    right: 0;
+    top: 63px;
+    right: 0px;
     bottom: 0;
     background-color: #333;
     padding: 2rem;
     box-shadow: 20px 20px 20px 20px black;
-    z-index: 2;
+    z-index: 3;
     
 }
 
@@ -111,7 +118,6 @@ header {
     opacity: 1;
     visibility: visible;
 }
-
 
 .barra {
     flex-direction: column;
@@ -121,8 +127,9 @@ header {
 .barra li a {
     color: white;
 }
-    
+
 }
+
 
 .slider-container {
     max-width:70%;
@@ -149,9 +156,10 @@ header {
     height: auto;
     display: flex;
     position: relative;
-    left: 110px;
+    left: 120px;
     box-shadow: 20px 20px 20px black;
     top: 10px;
+    align-items: center;
 }
 
 .prev, .next {
@@ -170,11 +178,11 @@ header {
 .prev { left: 10px; }
 .next { right: 20px; }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 480px) {
 .slider-container {
-    left: -40px;
-    max-width: 500px;
-    top: 250px;
+    left: -95px;
+    max-width: 550px;
+    top: 150px;
 
 }
 
@@ -183,18 +191,20 @@ header {
 }
 
 .slide img {
-    max-width: 400px;
+    max-width: 450px;
     max-height: 500px;
 
 }
 
 .prev, .next {
     top: 100px;
+    background-color: #333;
+    color: #f7f7f7;
     
 }
 
 .prev {
-    left: 120px;
+    left: 130px;
 }
 
 
@@ -259,5 +269,7 @@ footer {
     display: block;
     
 }
+
+
 
 

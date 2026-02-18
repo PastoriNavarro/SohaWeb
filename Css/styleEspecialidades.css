@@ -13,6 +13,21 @@ a {
     color: white;
 }
 
+
+.fondo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    background-attachment: fixed ;
+    position: relative;
+    text-align: center;
+    padding-top: 500px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    
+}
 header {
     display: flex;
     align-items: center;
@@ -23,7 +38,7 @@ header {
 
 .logo {
     max-width: 8rem;
-    margin-left: 60px;
+    margin-left: 40px;
     padding-right: 40px;
 }
 
@@ -125,12 +140,9 @@ header {
     background-attachment: fixed ;
     position: relative;
     text-align: center;
-    padding-top: 1100px;
-    padding-left: 0px;
+    padding-top: 500px;
     display: block;
     width: 100%;
-    height: 100%;
-    z-index: 0;
     
 }
 
@@ -138,9 +150,9 @@ header {
     padding: 20px;
     box-shadow: 20px 20px 20px #333;
     width: 900px;
-    height: 1000px;
+    height: 400px;
     max-width: 800px;
-    top: 160px;
+    top: 150px;
     left: 265px;
     color: #333;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -149,19 +161,20 @@ header {
     align-items: center;
     text-align: center;
     cursor: pointer;
-    z-index: 1;
 
 }
 
 @media screen and (max-width: 480px) {
     .carta {
         left: 20px;
-        top: 80px;
-        display: flexbox;
+        display: block;
         max-width: 400px;
         font-size: small;
+        height: 350px;
+        top: 100px;
     }
 }
+
 
 #col1 {
     float: left;
@@ -217,7 +230,7 @@ li {
     height: auto;
 }
 
-@media  screen and (max-width: 480px) {
+@media screen and  (max-width: 480px) {
     .modal-content img {
         width: 300px;
     }
@@ -241,7 +254,7 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 12.5px 0;
     position: relative;
     top: 0px;
 
@@ -257,4 +270,3 @@ align-items: center;
 display: block;
 
 }
-
