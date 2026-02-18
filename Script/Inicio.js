@@ -24,3 +24,8 @@ let currentSlide = 0;
         showSlide(currentSlide + 1);
     }
 
+
+
+
+
+    
