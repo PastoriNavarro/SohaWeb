@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/Css/styleEspecialidades.css">
+    <script src="/Script/menu.js"></script>
+    <title>Especialidades</title>
+</head>
+<body>
+
+<header>
+    <a href="/Html/Index.html"><img class="logo" src="/Imagenes/logobl.png" alt="logo"></a>
+    <button class="abrir" id="abrir"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+        <button class="cerrar" id="cerrar"><i class="bi bi-x-lg"></i></button>
+        <ul class="barra">
+        <li><a href="Contactos.html">CONTACTO</a></li>
+        <li><a href="SobreNosotros.html">SOBRE NOSOTROS</a></li>
+        <li><a href="Grupo.html">GRUPOS</a></li>
+        <li><a href="Menu.html">CARTA</a></li>
+        <li><a href="Reserva.html">RESERVAS</a></li>
+        <li><a href="Especialidades.html">ESPECIALIDADES</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <script src="/Script/nav.js"></script>
+
+    <div class="fondo" style="background-image: url(/Imagenes/sushi.png)"></div>
+
+<div class="carta">
+    <div id="col1">
+    <h1>Comida Japonesa</h1>
+    <h2>Pan Bao</h2>
+
+    <div class="menu-item" onclick="openModal('/Imagenes/pulled.jpg')">
+        <div class="nombre-plato"><h4>Pan Bao Pulled Pork</h4></div>
+        <div class="descripcion">
+            <p>Pan Bao relleno de carne Pulled Pork con salsa barbacoa</p>
+        </div>
+    </div>
+    
+    <div class="menu-item" onclick="openModal('/Imagenes/baoPringa.jpg')">
+        <div class="nombre-plato"><h4>Pan Bao de pringá</h4></div>
+        <div class="descripcion">
+            <p>Pan Bao relleno de carne de pringá</p>
+        </div>
+    </div>
+    </div>
+
+    <div id="col2">
+    <h1>Comida Española</h1>
+    <h2>Montaditos</h2>
+
+    <div class="menu-item" onclick="openModal('/Imagenes/serranito.jpg')">
+        <div class="nombre-plato"><h4>Serranito</h4></div>
+        <div class="descripcion">
+            <p>Montadito de cerdo/pollo con pimiento frito y Jamón Ibérico</p>
+        </div>
+    </div>
+
+    <div class="menu-item" onclick="openModal('/Imagenes/pringa.jpg')">
+        <div class="nombre-plato"><h4>Montadito de pringá</h4></div>
+        <div class="descripcion">
+            <p>Montadito de Pringá</p>
+        </div>
+    </div>
+</div>
+    </div>
+
+<div class="modal" id="myModal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImg" src="/Imagenes/ajo.jpeg" alt="Plato">
+    </div>
+</div>
+
+<footer>
+<div class="container-footer">
+        <p>&copy; 2024 Soha</p>
+        <i class="bi bi-instagram"></i>
+        <a href="https://www.instagram.com/">@SohaJapo</a>
+        <i class="bi bi-facebook"></i>
+        <a href="https://www.facebook.com/">Soha Japonés Fusión</a>
+        <i class="bi bi-twitter-x"></i>
+        <a href="https://twitter.com/">@SohaJapo</a>
+    </div>
+    <hr>
+    <div id="politicas">
+        <a href="/Html/Privacidad.html"><h4>Política de privacidad</h4></a>
+        <a href="/Html/Aviso.html"><h4>Aviso Legal</h4></a>
+        <a href="/Html/Cookies.html"><h4>Política de cookies</h4></a>
+    </div>
+    </footer>
+</body>
+</html>

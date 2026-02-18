@@ -3,21 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Css/styleInicio.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="/Script/Inicio.js"></script>
-    <script src="/Script/cookies.js"></script>
+    <link rel="stylesheet" href="/Css/styleReserva.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
-    <title>Soha</title>
+    <script src="/Script/reserva.js"></script>
+    <title>Reserva</title>
   </head>
   <body>
-
     <header>
       <a href="/Html/Index.html"><img class="logo" src="/Imagenes/logobl.png" alt="logo"></a>
   <button class="abrir" id="abrir"><i class="bi bi-list"></i></button>
       <nav class="nav" id="nav">
-      <button class="cerrar" id="cerrar"><i class="bi bi-x-lg"></i></button>
+        <button class="cerrar" id="cerrar"><i class="bi bi-x-lg"></i></button>
+
       <ul class="barra">
       <li><a href="Contactos.html">CONTACTO</a></li>
       <li><a href="SobreNosotros.html">SOBRE NOSOTROS</a></li>
@@ -33,34 +30,52 @@
 
     <div class="fondo" style="background-image: url(/Imagenes/sushi.png)"></div>
 
-    <div class="slider-container">
-      <div class="slider">
-        <div class="slide">
-          <img src="/Imagenes/sushiTexto.jpg" alt="bar">
-        </div>
-        <div class="slide">
-          <img src="/Imagenes/surtido.jpg" alt="niguiri">
-        </div>
-        <div class="slide">
-          <img src="/Imagenes/restaurante.jpg" alt="sushi">
-        </div>
+    <form onsubmit="validarFormulario()" class="reserva" id="reserva">
+    <h1>Reserva de Mesa</h1>
+    <div class="colum1">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" required>
+    </div>
+
+    <div class="colum1">
+      <label for="apellidos">apellidos</label>
+      <input type="text" id="apellidos" name="apellidos" required>
+    </div>
+
+    <div class="colum1">
+      <label for="telefono">Telefono</label>
+      <input type="tel" id="telefono" name="telefono" required>
+    </div>
+
+    <div class="colum1">
+        <label for="correo">Email</label>
+        <input type="email" id="correo" name="correo" required>
+    </div>
+
+    <div class="colum2">
+      <label for="menu">Menu</label>
+      <input type="number" id="menu" name="menu" min="1" max="3">
+    </div>
+
+      <div class="colum2">
+        <label for="personas">Número de personas</label>
+        <input type="number" id="personas" name="personas" required>
       </div>
-      <button class="prev" onclick="prevSlide()">&#10094;</button>
-      <button class="next" onclick="nextSlide()">&#10095;</button>
-    </div>
 
-    <div class="cookie-banner" id="cookieBanner">
-      <img src="/Imagenes/galleta.png" alt="Galleta">
-      <p>
-        Este sitio web utiliza cookies para garantizar que obtengas la mejor
-        experiencia en nuestra página. Al continuar navegando, aceptas nuestra
-        política de Cookies.
-      </p>
-      <button id="boton-aceptar" onclick="aceptarCookies()">Aceptar</button>
-      <button onclick="location.href= '/Html/Cookies.html'">Aviso de Cookies</button>
-    </div>
+      <div class="colum2">
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" name="fecha" required>
+      </div>
 
-    <footer>
+      <div class="colum2">
+        <label for="hora">Hora</label>
+        <input type="time" id="hora" name="hora" required>
+      </div>
+
+      <button class="boton" type="button" onclick="confirmarReserva()">Reservar</button>
+    </form>
+
+<footer>
       <div class="container-footer">
       <p>&copy; 2024 Soha</p>
         <i class="bi bi-instagram"></i>
@@ -76,7 +91,6 @@
         <a href="/Html/Aviso.html"><h4>Aviso Legal</h4></a>
         <a href="/Html/Cookies.html"><h4>Política de cookies</h4></a>
       </div>
-    </footer>
-   
+</footer>
   </body>
 </html>
